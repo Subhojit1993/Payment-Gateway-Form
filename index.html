@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Gateway Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="style_outerDiv">
+		<h3 class="style__paymentGatewayText">Payment Gateway Form</h3>
+		<form onsubmit="handleSubmit(event)">
+			<div id="outerDivId">
+				<div class="style_inputIo">
+					<div id="img_Outer" class="style__noDisplay">
+						<img id="img_id_1" src="" class="style__img_size" />
+					</div>
+					<div id="card_number_01" class="style__displayBlock">
+						<input 
+							type="text" 
+							id="card_number"
+							class="style__inputField" 
+							placeholder="Card Number" 
+							name="card_num"
+							onkeypress="return isNumber(event)"
+							onchange="handleChange(event)"
+							required 
+						>
+					</div>
+				</div>
+				<div class="style_inputIo">
+					<div class="style_inputInline style_flexStart style_cvvWidth">
+						<div>
+							<input 
+								type="text" 
+								id="cvv"
+								class="style__inputField" 
+								placeholder="CVV" 
+								name="cvv_num"
+								onkeypress="return isNumber(event)" 
+								onchange="handleCvvChange(event)"
+								required
+							>
+						</div>
+					</div>
+					<div class="style_inputInline style_flexEnd style_expiryDateWidth">
+						<div>
+							<input 
+								type="text" 
+								id="expiry_date"
+								class="style__inputField style__cursorPointer" 
+								placeholder="mm-yyyy"  
+								onchange="handleDate(event)"
+								onfocus="(this.type='month')"
+							>
+						</div>
+					</div>
+				</div>
+				<div id="invalid_fields" class="style__textAlign">
+				</div>
+				<div class="style__buttonDiv">
+					<div class="style__buttonOuter">
+						<button 
+							id="buttonId" 
+							type="submit" 
+							class="style__saveButton" 
+							onclick="handleSubmit(event)"
+						>
+							Save
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="cardListOut">
+	</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

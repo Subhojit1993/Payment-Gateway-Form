@@ -1,0 +1,218 @@
+.style_outerDiv {
+	margin: 12% 30%;
+	margin-bottom: 70px;
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.style_inputIo {
+	position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 80%;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    margin: 15px 50px;
+}
+
+.style_inputInline {
+	display: inline-flex;
+	width: auto;
+}
+
+.style_flexStart {
+	justify-content: flex-start;
+}
+
+.style_flexEnd {
+	justify-content: flex-end;
+}
+
+.style_cvvWidth {
+	width: 40%;
+}
+
+.style_expiryDateWidth {
+	width: 57%;
+}
+
+.style__inputField {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #00CCCC;
+    outline: 0;
+    font-size: 18px;
+    color: #00CCCC;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-top: 5px;
+
+    &::placeholder {
+      color: transparent;
+    }
+}
+
+  /* reset input */
+  .style__inputField{
+    &:required,&:invalid { box-shadow:none; }
+  }
+
+  .style__buttonDiv {
+  	min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .style__saveButton {
+  	width: 85px;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+    background: #00CCCC;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .style__saveButton:active {
+  	width: 85px;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+    background: #00CCCC;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .style__saveButton:disabled {
+  	background: #ccc;
+    color: #FFFFFF;
+  }
+
+  .style__cursorPointer {
+  	cursor: pointer;
+  }
+
+  .style__noDisplay {
+  	display: none;
+  }
+
+  .style__displayBlock {
+  	display: block;
+  }
+
+  .style__img_size {
+  	height: 37px;
+  	width: 37px
+  }
+
+  .style__imgOuterClass {
+  	display: inline-block !important;
+  	position: absolute !important;
+  }
+
+  .style__fieldOuterClass {
+  	display: inline-block !important;
+  	width: 87% !important;
+  }
+
+  .style__fieldOuterClass .style__inputField {
+  	padding-left: 50px !important;
+  }
+
+  .style__textAlign {
+  	font-family: 'Montserrat';
+    text-align: center;
+  }
+
+  .style___colStyle {
+  	display: inline-flex;
+    align-items: center;
+    min-height: 55px;
+    margin-left: 60px;
+  }
+
+  .style__iconOuterDiv {
+  	display: inline-block;
+    min-height: 55px;
+    position: absolute;
+  }
+
+  .style_listIconClass {
+  	width: 50px;
+  	height: 50px;
+  }
+
+  .style__buttonOuter {
+  	display: inline-block;
+  	margin-left: 20px;
+  }
+
+  #cardListOut {
+	display: flex;
+    justify-content: center;
+  }
+
+  #fetchedList_1 {
+  	min-height: 225px;
+  	margin: 10px 0%;
+  }
+
+  .style__rowStyle {
+  	display: block;
+  	margin-bottom: 15px;
+  }
+
+  .style__removeButton {
+  	padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #8B0000;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+  }
+
+  .style_numberWidth{
+  	width: 150px;
+  }
+
+  .style_fetchedCvvWidth {
+  	width: 40px;
+  }
+
+  .style__paymentGatewayText {
+  	padding: 15px 0;
+  	text-align: center;
+  }
+
+input[type="text"]:disabled {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="month"]:disabled {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+@media screen and (max-width: 1092px) {
+  	.style_outerDiv {
+	    margin: 12% 25% !important;
+	    margin-bottom: 70px;
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+}
+
+@media screen and (max-width: 992px) {
+  	.style_outerDiv {
+	    margin: 12% 20% !important;
+	    margin-bottom: 70px;
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+}
