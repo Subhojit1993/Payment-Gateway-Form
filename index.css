@@ -1,7 +1,16 @@
+html {
+  background: url("payment_gateway_background.jpg");
+  background-repeat: no-repeat, repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
 .style_outerDiv {
 	margin: 12% 30%;
 	margin-bottom: 70px;
-  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background: #FFFFFF;
 }
 
 .style_inputIo {
@@ -160,6 +169,8 @@
   #fetchedList_1 {
   	min-height: 225px;
   	margin: 10px 0%;
+    background: #FFFFFF;
+    padding: 0 20px;
   }
 
   .style__rowStyle {
@@ -206,6 +217,7 @@ input[type="month"]:disabled {
 	    margin: 12% 25% !important;
 	    margin-bottom: 70px;
 	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      background: #FFFFFF;
 	}
 }
 
@@ -214,5 +226,6 @@ input[type="month"]:disabled {
 	    margin: 12% 20% !important;
 	    margin-bottom: 70px;
 	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      background: #FFFFFF;
 	}
 }
